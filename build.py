@@ -515,9 +515,9 @@ def make_term_index(term, language, theme, root_dir, output_dir, output_file, pr
             if file.format == 'pdf':
                 files_link.set('class', 'files-link pdf')
                 if file.filename[-14:-3] == '.phantomjs.':
-                    files_link.text = 'Download phantomjs PDF'
+                    files_link.text = language.translate('Download PDF')
                 else:
-                    files_link.text = 'Download wkhtmltopdf PDF'
+                    files_link.text = language.translate('Download PDF')
 
         note_pdf_url = False
 
