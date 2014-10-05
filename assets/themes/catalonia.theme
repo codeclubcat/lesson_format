@@ -1,0 +1,14 @@
+{
+    "id":"catalonia",
+    "language":"ca-ES",
+    "name":"Projectes Code Club World",
+    "legal": "Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href=\"http://www.codeclub.org.uk/\">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href=\"https://github.com/CodeClub/\">www.github.com/CodeClub</a>. Uneix-te a nosaltres!",
+    "stylesheets": [],
+    "logo": "/img/cccat_logo.png",
+    "favicon": "/img/ccw_favicon.png",
+    "css_variables": {
+        "header_bg_light": "#ADCAEA",
+        "header_bg_dark": "#007CC9",
+        "header_text": "#FFFFFF"
+    }
+}
