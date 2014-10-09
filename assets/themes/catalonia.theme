@@ -1,7 +1,7 @@
 {
     "id":"catalonia",
     "language":"ca-ES",
-    "name":"Projectes Code Club World",
+    "name":"Projectes Code Club Catalunya",
     "legal": "Aquests projectes són per ús només fora del Regne Unit. Teniu més informació disponible a la plana web <a href=\"http://www.codeclub.org.uk/\">www.codeclub.org.uk</a>. <br /> Aquests materials es desenvolupen en obert a Github, a <a href=\"https://github.com/CodeClub/\">www.github.com/CodeClub</a>. Uneix-te a nosaltres!",
     "stylesheets": [],
     "logo": "/img/cccat_logo.png",
