@@ -44,10 +44,15 @@ base               = os.path.dirname(os.path.abspath(__file__))
 template_base      = os.path.join(base, "assets", "templates")
 theme_base         = os.path.join(base, "assets", "themes")
 language_base      = os.path.join(base, "assets", "languages")
-phantomjs          = os.path.join(base, "node_modules", ".bin", "phantomjs")
 PANDOC_MARKDOWN    = "markdown_github-implicit_figures+header_attributes+yaml_metadata_block+inline_code_attributes+footnotes"
 year               = datetime.now().year
 banned_chars       = re.compile(r'[\\/?|;:!#@$%^&*<>, ]+')
+
+# permit different phantomjs install on ubuntu 
+if os.path.isfile('/usr/bin/phantomjs'):
+    phantomjs = os.path.join("/usr", "bin", "phantomjs")
+else:
+    phantomjs = os.path.join(base, "node_modules", ".bin", "phantomjs")
 
 index_style = Style(
     name          = 'lesson',
@@ -191,7 +196,7 @@ def phantomjs_pdf(input_file, output_file, root_dir, legal):
         '--waitFor', 'document.getElementById("legend").style.display == "block"',
         input_file, output_file, '"A4"'
     ]
-
+    print cmd
     return 0 == subprocess.call(cmd)
 
 def qtwebkit_to_pdf(input_file, output_file, root_dir, legal):
